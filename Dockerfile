@@ -10,8 +10,6 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 
 RUN sudo apt install -y nodejs
 
-ADD lib /lib
-
 ADD dist /dist
 
 ADD pages /pages
