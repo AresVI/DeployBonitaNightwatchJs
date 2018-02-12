@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+    <customUserInfoDefinitions/>
+    <users>
+        <user userName="audito1">
+            <password encrypted="true">F10uemPzhlVKTdZuhlw+FA==</password>
+            <firstName>Auditor1</firstName>
+            <lastName>Externo</lastName>
+            <title></title>
+            <jobTitle></jobTitle>
+            <enabled>true</enabled>
+            <personalData/>
+            <professionalData/>
+            <customUserInfoValues/>
+            <metaDatas/>
+        </user>
+        <user userName="caballerojavier13">
+            <password encrypted="true">5qlT4VAOAgEKO2omKeG5ew==</password>
+            <firstName>Javier</firstName>
+            <lastName>Caballero</lastName>
+            <enabled>true</enabled>
+            <personalData/>
+            <professionalData/>
+            <customUserInfoValues/>
+            <metaDatas/>
+        </user>
+        <user userName="system">
+            <password encrypted="true">VLUwclQO7rj46TQ+cfKBdg==</password>
+            <firstName>Administrador</firstName>
+            <lastName>Sistema</lastName>
+            <title></title>
+            <jobTitle></jobTitle>
+            <enabled>true</enabled>
+            <personalData/>
+            <professionalData/>
+            <customUserInfoValues/>
+            <metaDatas/>
+        </user>
+    </users>
+    <roles>
+        <role name="external_auditor">
+            <displayName>Auditor Externo</displayName>
+        </role>
+        <role name="system">
+            <displayName>Sistema</displayName>
+        </role>
+    </roles>
+    <groups>
+        <group name="member">
+            <displayName>member</displayName>
+        </group>
+    </groups>
+    <memberships>
+        <membership>
+            <userName>caballerojavier13</userName>
+            <roleName>external_auditor</roleName>
+            <groupName>member</groupName>
+            <assignedDate>0</assignedDate>
+        </membership>
+        <membership>
+            <userName>system</userName>
+            <roleName>system</roleName>
+            <groupName>member</groupName>
+            <assignedDate>0</assignedDate>
+        </membership>
+        <membership>
+            <userName>audito1</userName>
+            <roleName>external_auditor</roleName>
+            <groupName>member</groupName>
+            <assignedDate>0</assignedDate>
+        </membership>
+    </memberships>
+</organization:Organization>

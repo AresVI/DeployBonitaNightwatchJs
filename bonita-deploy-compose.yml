@@ -1,0 +1,5 @@
+version: '2'
+services:
+    bonita_deploy:
+        image: aresvi/bonita_deploy_nightwatchjs:latest
+        container_name: bonita_deploy
