@@ -2,7 +2,7 @@
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
     <customUserInfoDefinitions/>
     <users>
-        <user userName="audito1">
+        <user userName="auditor1">
             <password encrypted="true">F10uemPzhlVKTdZuhlw+FA==</password>
             <firstName>Auditor1</firstName>
             <lastName>Externo</lastName>
