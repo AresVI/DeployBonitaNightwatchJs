@@ -82,7 +82,7 @@ module.exports = {
 
         client.pause(2 * 1000);
 
-        var processes = ['/dist/Despacho--1.0.bar', '/dist/Elaboración--1.0.bar', '/dist/Producción de Materia Prima--1.0.bar'];
+        var processes = ['/dist/Despacho--1.0.bar', '/dist/Elaboracion--1.0.bar', '/dist/Produccion de Materia Prima--1.0.bar'];
 
         for(var i in processes){
 
