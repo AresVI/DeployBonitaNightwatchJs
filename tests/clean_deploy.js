@@ -111,7 +111,7 @@ module.exports = {
 
         var index_bpm_process = client.page.index_bpm_process();
 
-        var processes = ['/dist/Despacho--1.0.bar', '/dist/Elaboración--1.0.bar', '/dist/Producción de Materia Prima--1.0.bar'];
+        var processes = ['/dist/Despacho--1.0.bar', '/dist/Elaboracion--1.0.bar', '/dist/Produccion de Materia Prima--1.0.bar'];
 
         for(var i in processes){
 
@@ -127,7 +127,9 @@ module.exports = {
 
             client.element("css selector", "#bonitaframe", function(response) {
                 client.frame({ELEMENT: response.value.ELEMENT}, function () {
+                    client.waitForElementPresent('#process-details-information > div > div > div:nth-child(1) > div:nth-child(2) > div  label.active', 5 * 1000);
                     client.click('#process-details-information > div > div > div:nth-child(1) > div:nth-child(2) > div  label.active');
+                    client.waitForElementPresent('#processDetails-back', 5 * 1000);
                     client.click('#processDetails-back');
                 });
             });
