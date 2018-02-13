@@ -1,7 +1,7 @@
 version: '2'
 services:
     aresvi-bonita:
-        image: bonita:latest
+        image: bonita:7.5.2
         container_name: bonita
         environment:
             - HTTP_API=true
