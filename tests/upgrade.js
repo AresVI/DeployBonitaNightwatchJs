@@ -98,10 +98,29 @@ module.exports = {
 
             client.element("css selector", "#bonitaframe", function(response) {
                 client.frame({ELEMENT: response.value.ELEMENT}, function () {
-                    client.waitForElementPresent('#process-details-information > div > div > div:nth-child(1) > div:nth-child(2) > div  label.active', 5 * 1000);
-                    client.click('#process-details-information > div > div > div:nth-child(1) > div:nth-child(2) > div  label.active');
-                    client.waitForElementPresent('#processDetails-back', 5 * 1000);
-                    client.click('#processDetails-back');
+
+                    var edit_bpm_process = client.page.edit_bpm_process();
+
+                    edit_bpm_process
+                        .waitForElementPresent('@checkboxEnableProcess', 5 * 1000)
+                        .click('@checkboxEnableProcess')
+                        .waitForElementPresent('@buttonActors', 1000)
+                        .click('@buttonActors')
+                        .waitForElementPresent('@buttonActorsAddUsers', 1000)
+                        .click('@buttonActorsAddUsers')
+                        .waitForElementPresent('@selectActorsAddUsers', 1000)
+                        .click('@selectActorsAddUsers')
+                        .waitForElementPresent('@buttonSelectAllSelectorActorsAddUsers', 1000)
+                        .click('@buttonSelectAllSelectorActorsAddUsers')
+                        .waitForElementPresent('@buttonApplyActorsAddUsers', 1000)
+                        .click('@buttonApplyActorsAddUsers');
+
+                    client.pause(2 * 1000);
+
+                    edit_bpm_process
+                        .waitForElementPresent('@buttonBack', 5 * 1000)
+                        .click('@buttonBack');
+
                 });
             });
 

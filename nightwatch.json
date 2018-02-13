@@ -12,7 +12,7 @@
   "custom_assertions_path" : "",
   "page_objects_path" : "pages",
   "selenium" : {
-    "start_process" : false,
+    "start_process" : true,
     "server_path" : "./node_modules/selenium-standalone/.selenium/selenium-server/3.7.1-server.jar",
     "log_path" : "",
     "host" : "127.0.0.1",
