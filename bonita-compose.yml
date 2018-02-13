@@ -5,5 +5,6 @@ services:
         container_name: bonita
         environment:
             - HTTP_API=true
+            - REST_API_DYN_AUTH_CHECKS=false
         ports:
             - 35407:8080
