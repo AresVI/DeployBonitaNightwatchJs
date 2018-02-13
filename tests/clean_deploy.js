@@ -132,7 +132,11 @@ module.exports = {
 
                     edit_bpm_process
                         .waitForElementPresent('@checkboxEnableProcess', 5 * 1000)
-                        .click('@checkboxEnableProcess')
+                        .click('@checkboxEnableProcess');
+
+                    client.pause(3 * 1000);
+
+                    edit_bpm_process
                         .waitForElementPresent('@buttonActors', 1000)
                         .click('@buttonActors')
                         .waitForElementPresent('@buttonActorsAddUsers', 1000)
